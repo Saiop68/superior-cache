@@ -1,0 +1,55 @@
+{
+  "name": "superior-cache",
+  "version": "1.0.0",
+  "description": "Production-grade distributed caching system for Node.js with multi-layer cache, request deduplication, stampede protection, tag-based invalidation, background refresh, clustering support, and observability.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "example": "ts-node examples/demo.ts",
+    "clean": "rimraf dist",
+    "prepublish": "npm run build",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "cache",
+    "redis",
+    "distributed",
+    "lru",
+    "multi-layer",
+    "deduplication",
+    "stampede",
+    "typescript",
+    "cluster",
+    "pubsub",
+    "invalidation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ioredis": "^5.6.1",
+    "msgpackr": "^1.11.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^1.6.0"
+  }
+}
