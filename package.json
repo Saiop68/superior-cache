@@ -36,8 +36,16 @@
     "pubsub",
     "invalidation"
   ],
-  "author": "",
+  "author": "Saira",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saira/superior-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saira/superior-cache/issues"
+  },
+  "homepage": "https://github.com/saira/superior-cache#readme",
   "engines": {
     "node": ">=18.0.0"
   },
