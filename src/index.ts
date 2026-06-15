@@ -12,6 +12,8 @@
  */
 
 export { SuperiorCache } from "./core/superior-cache";
+export { SieveCache } from "./core/sieve-cache";
+export type { SieveCacheOptions } from "./core/sieve-cache";
 export { CacheNamespace } from "./core/namespace";
 export { CacheEventBus } from "./core/event-bus";
 export { setupClusterPrimary } from "./core/cluster-manager";

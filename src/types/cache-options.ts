@@ -27,6 +27,9 @@ export interface MemoryLayerOptions {
 
   /** How often (ms) to sweep for expired entries (default: 10_000 = 10 s). */
   sweepIntervalMs?: number;
+
+  /** Internal option: track hot keys to avoid counter updates when disabled. */
+  trackHotKeys?: boolean;
 }
 
 

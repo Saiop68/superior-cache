@@ -5,6 +5,7 @@
  */
 
 export { SuperiorCache } from "./superior-cache";
+export { SieveCache } from "./sieve-cache";
 export { CacheEventBus } from "./event-bus";
 export { Deduplicator } from "./deduplicator";
 export { DependencyTracker } from "./dependency-tracker";

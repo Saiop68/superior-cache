@@ -95,7 +95,10 @@ export class SuperiorCache {
     };
 
     // Memory layer (L1)
-    this.memory = new MemoryLayer(options.memory, debug);
+    this.memory = new MemoryLayer({
+      ...options.memory,
+      trackHotKeys: options.hotKeys?.enabled !== false,
+    }, debug);
 
     // Redis layer (L2) – null if explicitly disabled
     this.redis = options.redis === false
