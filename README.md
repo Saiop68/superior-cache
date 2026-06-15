@@ -171,9 +171,6 @@ lru-cache: mixed (80/10/10)     606.72 ns/iter 788.04 ns     █▆▂
 === STANDALONE SieveCache vs lru-cache Benchmark ===
 Config: max=10000, pre-populated
 
-clk: ~2.46 GHz
-cpu: AMD Ryzen 7 6800HS with Radeon Graphics         
-runtime: node 20.20.0 (x64-win32)
 
 benchmark                            avg (min … max) p75 / p99    (min … top 1%)
 ---------------------------------------------------- -------------------------------
